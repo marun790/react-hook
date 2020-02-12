@@ -2,19 +2,23 @@ import React, { useState } from 'react'
 
 export default function ArrayHook() {
 
-    const [cart, setCart] = useState([])
+    const [items, setItems] = useState([]);
 
-    function add2Cart(item) {
-        updateCard(setCart(cart.push(item)));
+    function addItem() {
+        console.log("inside addItem");
+        setItems([
+            ...items,
+            { id: items.length, value: Math.floor(Math.random() * 10) + 1 }]
+        );
     }
 
     return (
-
         <div>
-            <input type="text" />
-            <button onClick={() => add2Cart()}> Add</button>
+            <button onClick={() => addItem()}>Add</button>
             <ul>
-
+                {items.map(item => (
+                    <li key={item.id}>{item.id} - {item.value}</li>
+                ))}
             </ul>
         </div>
     )
