@@ -8,6 +8,7 @@ export default function HookCounter1() {
     useEffect(() => {
         console.log('update clicjk count');
         document.title = `Clicked ${count} Times`
+
     }, [count]);
 
     return (
