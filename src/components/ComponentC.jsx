@@ -1,23 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { UserConext, ProfileConext } from './ComponentA'
 
 export default function ComponentC() {
+    const user = useContext(UserConext);
+    const profile = useContext(ProfileConext);
+
     return (
         <div>
-            <UserConext.Consumer>
+            User: {user} Profile : {profile}
+            {/* <UserConext.Consumer>
                 {user => {
                     return (
                         <ProfileConext.Consumer>
                             {
                                 profile => {
-                                    return <daiv> User: {user} Profile : {profile}</daiv>
+                                    return <div> User: {user} Profile : {profile}</div>
                                 }
                             }
                         </ProfileConext.Consumer>
                     )
                 }
                 }
-            </UserConext.Consumer>
+            </UserConext.Consumer> */}
         </div>
     )
 }
