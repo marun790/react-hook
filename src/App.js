@@ -1,5 +1,5 @@
 import React from 'react';
-// import App from './App.css'
+import './App.css'
 // import HookMouse from './components/HookMouse';
 // import HookMouseContainer from './components/HookMouseContainer';
 // import CounterComponent from './components/CounterComponent';
@@ -9,7 +9,8 @@ import React from 'react';
 // import HookCounter1 from './components/HookCounter1';
 
 // import ComponentA from './components/ComponentA';
-import CountOne from './components/CountOne';
+// import CountOne from './components/CountOne';
+import CounterTwo from './components/CounterTwo';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <HookMouse /> */}
 
       {/* <ComponentA /> */}
-      <CountOne />
+      {/* <CountOne /> */}
+      <CounterTwo />
     </div>
   );
 }
