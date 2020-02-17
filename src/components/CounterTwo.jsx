@@ -28,6 +28,8 @@ const reducer = (state, action) => {
                 ...state,
                 secondCount: state.secondCount - action.value
             };
+        case "reset":
+            return initialState;
         default:
             return state;
 
@@ -47,6 +49,7 @@ export default function CounterTwo() {
             <button onClick={() => dispatch({ type: "increment", value: 5 })}> Increment5 </button>
             <button onClick={() => dispatch({ type: "increment2", value: 3 })}> Increment2</button>
             <button onClick={() => dispatch({ type: "decrement2", value: 3 })}>decrement2</button>
+            <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
         </div >
     )
 }
