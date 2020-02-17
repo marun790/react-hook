@@ -8,7 +8,8 @@ import React from 'react';
 // import ArrayHook from './components/ArrayHook';
 // import HookCounter1 from './components/HookCounter1';
 
-import ComponentA from './components/ComponentA';
+// import ComponentA from './components/ComponentA';
+import CountOne from './components/CountOne';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       {/* <HookMouseContainer /> */}
       {/* <HookMouse /> */}
 
-      <ComponentA />
+      {/* <ComponentA /> */}
+      <CountOne />
     </div>
   );
 }
