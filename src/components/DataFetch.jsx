@@ -17,16 +17,17 @@ export default function DataFetch() {
        .catch((err) => {
            console.log(err);
        })     
-    }, [id])
+    }, [idFromButtonClick])
 
     const handleButtonClick = () => {
-        
+        console.log('inside handleButtonClick', id);
+        setIdFromButtonClick(id);
     }
 
     return (
         <div>
             <input type = 'text' value={id} onChange = {e => setId(e.target.value)} />
-            <button onClick={() => getPost()}>Get Post</button>
+            <button onClick={() => handleButtonClick()}>Get Post</button>
             {/* <ul>
                 {
                     posts.map(post => <li key = {post.id}>{post.title}</li>)
