@@ -13,7 +13,8 @@ import DataFetch from './components/DataFetch';
 // import ComponentA from './components/ComponentA';
 // import CountOne from './components/CountOne';
 // import CounterTwo from './components/CounterTwo';
-import CounterThree from './components/CounterThree';
+// import CounterThree from './components/CounterThree';
+import Counter_COMBO_A from './components/Counter_COMBO_A';
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
       {/* <ComponentA /> */}
       {/* <CountOne /> */}
       {/* <CounterTwo /> */}
-      <CounterThree />
+      {/* <CounterThree /> */}
+      <Counter_COMBO_A/>
     </div>
   );
 }

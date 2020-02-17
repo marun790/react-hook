@@ -25,7 +25,7 @@ export default function CountOne() {
     // Will accept th reducer and initialState and will return pair of values
     // 0 -> current state 
     // 1 -> dispatch event
-    const [count = 2, dispatch] = useReducer(reducer, initilState);
+    const [count, dispatch] = useReducer(reducer, initilState);
 
     return (
         <div>

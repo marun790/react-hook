@@ -1,6 +1,9 @@
 import React,{useState, useEffect} from 'react'
-import axios from 'axios'({});
+import axios from 'axios';
+
+export default function DataFetch() {
     const[id, setId] = useState(0);
+    const[post, setPost] = useState();
     const[idFromButtonClick, setIdFromButtonClick] = useState(0);
 
     useEffect(() => {
@@ -20,7 +23,7 @@ import axios from 'axios'({});
     }
 
     return (
-        <div>
+         <div>
             <input type = 'text' value={id} onChange = {e => setId(e.target.value)} />
             <button onClick={() => handleButtonClick()}>Get Post</button>
             {/* <ul>
