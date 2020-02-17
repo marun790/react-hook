@@ -10,7 +10,8 @@ import './App.css'
 
 // import ComponentA from './components/ComponentA';
 // import CountOne from './components/CountOne';
-import CounterTwo from './components/CounterTwo';
+// import CounterTwo from './components/CounterTwo';
+import CounterThree from './components/CounterThree';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
 
       {/* <ComponentA /> */}
       {/* <CountOne /> */}
-      <CounterTwo />
+      {/* <CounterTwo /> */}
+      <CounterThree />
     </div>
   );
 }
