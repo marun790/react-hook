@@ -1,10 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import axios from 'axios'
-
-
-
-export default function DataFetch() {
-    const[post, setPost] = useState({});
+import axios from 'axios'({});
     const[id, setId] = useState(0);
     const[idFromButtonClick, setIdFromButtonClick] = useState(0);
 

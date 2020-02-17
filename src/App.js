@@ -10,6 +10,11 @@ import DataFetch from './components/DataFetch';
 // import ArrayHook from './components/ArrayHook';
 // import HookCounter1 from './components/HookCounter1';
 
+// import ComponentA from './components/ComponentA';
+// import CountOne from './components/CountOne';
+// import CounterTwo from './components/CounterTwo';
+import CounterThree from './components/CounterThree';
+
 function App() {
   return (
     // <Provider store={store}>
@@ -20,10 +25,17 @@ function App() {
       {/* <HookCounter /> */}
       {/* <HoockObject /> */}
       {/* <ArrayHook /> */}
+      {/* <HookCounter1 /> */}
+      {/* <HookMouseContainer /> */}
       {/* <HookMouse /> */}
       {/* <HookMouseContainer/> */}
       {/* <IntervalHookCounter/> */}
-      {<DataFetch/>}
+      {/* {<DataFetch/>} */}
+
+      {/* <ComponentA /> */}
+      {/* <CountOne /> */}
+      {/* <CounterTwo /> */}
+      <CounterThree />
     </div>
   );
 }
