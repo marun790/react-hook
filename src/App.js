@@ -1,5 +1,7 @@
 import React from 'react';
 // import App from './App.css'
+// import HookMouse from './components/HookMouse';
+// import HookMouseContainer from './components/HookMouseContainer';
 // import CounterComponent from './components/CounterComponent';
 // import HookCounter from './components/HookCounter';
 // import HoockObject from './components/HoockObject';
@@ -19,9 +21,11 @@ function App() {
       {/* <HoockObject /> */}
       {/* <ArrayHook /> */}
       {/* <HookCounter1 /> */}
+      {/* <HookMouseContainer /> */}
+      {/* <HookMouse /> */}
 
       <ComponentA />
-    </div >
+    </div>
   );
 }
 
