@@ -23,8 +23,6 @@ export default function HookMouse() {
     }, []);
     /**   by pasing an empty array we mimik the component did mount, 
      so the useEffect() wont be called whenever the state got changed.*/
-
-
     return (
         <div>
             X : {x} And Y : {y}

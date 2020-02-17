@@ -1,6 +1,9 @@
 import React from 'react';
+import './App.css'
 // import HookMouse from './components/HookMouse';
-import HookMouseContainer from './components/HookMouseContainer';
+// import HookMouseContainer from './components/HookMouseContainer';
+// import IntervalHookCounter from './components/IntervalHookCounter';
+import DataFetch from './components/DataFetch';
 // import CounterComponent from './components/CounterComponent';
 // import HookCounter from './components/HookCounter';
 // import HoockObject from './components/HoockObject';
@@ -18,7 +21,9 @@ function App() {
       {/* <HoockObject /> */}
       {/* <ArrayHook /> */}
       {/* <HookMouse /> */}
-      <HookMouseContainer/>
+      {/* <HookMouseContainer/> */}
+      {/* <IntervalHookCounter/> */}
+      {<DataFetch/>}
     </div>
   );
 }
