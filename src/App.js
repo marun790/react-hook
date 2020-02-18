@@ -16,6 +16,7 @@ import DataFetch from './components/DataFetch';
 // import CounterThree from './components/CounterThree';
 // import Counter_COMBO_A from './components/Counter_COMBO_A';
 import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchTwo from './components/DataFetchTwo';
 
 function App() {
   return (
@@ -39,7 +40,8 @@ function App() {
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
       {/* <Counter_COMBO_A/> */}
-      <DataFetchingOne />
+      {/* <DataFetchingOne /> */}
+      <DataFetchTwo />
     </div>
   );
 }
