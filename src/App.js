@@ -3,7 +3,7 @@ import './App.css'
 // import HookMouse from './components/HookMouse';
 // import HookMouseContainer from './components/HookMouseContainer';
 // import IntervalHookCounter from './components/IntervalHookCounter';
-import DataFetch from './components/DataFetch';
+// import DataFetch from './components/DataFetch';
 // import CounterComponent from './components/CounterComponent';
 // import HookCounter from './components/HookCounter';
 // import HoockObject from './components/HoockObject';
@@ -15,8 +15,9 @@ import DataFetch from './components/DataFetch';
 // import CounterTwo from './components/CounterTwo';
 // import CounterThree from './components/CounterThree';
 // import Counter_COMBO_A from './components/Counter_COMBO_A';
-import DataFetchingOne from './components/DataFetchingOne';
-import DataFetchTwo from './components/DataFetchTwo';
+// import DataFetchingOne from './components/DataFetchingOne';
+// import DataFetchTwo from './components/DataFetchTwo';
+import Props1 from './components/Props1';
 
 function App() {
   return (
@@ -41,7 +42,9 @@ function App() {
       {/* <CounterThree /> */}
       {/* <Counter_COMBO_A/> */}
       {/* <DataFetchingOne /> */}
-      <DataFetchTwo />
+      {/* <DataFetchTwo /> */}
+      <Props1 />
+
     </div>
   );
 }
