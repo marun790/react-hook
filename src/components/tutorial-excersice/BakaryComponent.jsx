@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { buyCake } from '../redux';
+import { buyCake } from '../../redux';
 // import { buyCake } from '../redux/bakary/bakaryAction';
 
 class BakaryComponent extends Component {

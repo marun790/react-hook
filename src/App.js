@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css'
+import Layout from './components/flex/Layout';
+// import Login from './components/login/Login';
 // import HookMouse from './components/HookMouse';
 // import HookMouseContainer from './components/HookMouseContainer';
 // import IntervalHookCounter from './components/IntervalHookCounter';
@@ -17,7 +19,7 @@ import './App.css'
 // import Counter_COMBO_A from './components/Counter_COMBO_A';
 // import DataFetchingOne from './components/DataFetchingOne';
 // import DataFetchTwo from './components/DataFetchTwo';
-import Props1 from './components/Props1';
+// import Props1 from './components/Props1';
 
 function App() {
   return (
@@ -43,7 +45,9 @@ function App() {
       {/* <Counter_COMBO_A/> */}
       {/* <DataFetchingOne /> */}
       {/* <DataFetchTwo /> */}
-      <Props1 />
+      {/* <Props1 /> */}
+      {/* <Login/> */}
+      <Layout/>
 
     </div>
   );
