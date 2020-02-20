@@ -12,9 +12,11 @@ export default function Props2(props) {
     return (
 
         < div >
-            From Props2 ->{props.name}
-            From obj1 ->{name}
-            From obj ->{stock}
+            <ul>
+                <li>From Props2 ->{props.name}</li>
+                <li>From obj1 ->{name}</li>
+                <li>From obj ->{stock}</li>
+            </ul>
         </div >
     )
 }
