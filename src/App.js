@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css'
-import Layout from './components/flex/Layout';
+import Home from './components/routing/Home';
+// import BasicExample from './components/routing/BasicExample';
+// import Layout from './components/flex/Layout';
 // import Login from './components/login/Login';
 // import HookMouse from './components/HookMouse';
 // import HookMouseContainer from './components/HookMouseContainer';
@@ -47,8 +49,9 @@ function App() {
       {/* <DataFetchTwo /> */}
       {/* <Props1 /> */}
       {/* <Login/> */}
-      <Layout/>
-
+      {/* <Layout/> */}
+      <Home />
+      {/* <BasicExample/> */}
     </div>
   );
 }
