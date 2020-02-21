@@ -66,3 +66,39 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+
+Founnd by : Dan Abramov
+
+What?
+    Open source JS lib to build UI
+        > Just a lib not a frame work only focus on  `                             only building on RICH UI
+    Having RICH ecosystem to use other library like
+        > Routing
+        > State management
+        > so on ..... :)
+    To resolve complexity of maintaining advertisements, facebook invent react
+    
+Why?
+    To build a rich front end application we need HTML and CSS but put to-gather to use we need a framework, Angular having lot of components and bundles it's not so simple but react focus only on building UI. By using of component based architecture we can achieve it.      
+    
+    we can build reusable components and populate corresponding date in components, it will increase the productivity and application performance.
+    Eg: Artical component can be used for React angular and vue.
+    
+    Because of a big organisation and well developed open-source community rest having strong foundation so never let go down, I believe :)
+    
+    And as I said big community, there is lot of support.
+    
+    
+    REAT IS A DECLARATIVE..?
+    
+        >Declarative : Just abstraction is enough
+        >Imperative : Have to tell algorithmically.
+            Eg: Asking a drawing from a artist is differ from a child
+            
+    React can be partial and full page of application, it will fit into it.            
+
+    
+    
