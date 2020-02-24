@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css'
-import Home from './components/routing/Home';
+// import Message from './state/Message';
+import Counter from './state/Counter';
+// import Parent from './components/props/Parent';
+// import Home from './components/routing/Home';
+// import Login from './components/login/Login';
 // import BasicExample from './components/routing/BasicExample';
 // import Layout from './components/flex/Layout';
 // import Login from './components/login/Login';
@@ -50,8 +54,13 @@ function App() {
       {/* <Props1 /> */}
       {/* <Login/> */}
       {/* <Layout/> */}
-      <Home />
+      {/* <Home> */}
+{/* <Login/> */}
       {/* <BasicExample/> */}
+      {/* <Parent/> */}
+      {/* <Message/>*/}
+
+      <Counter/>
     </div>
   );
 }
