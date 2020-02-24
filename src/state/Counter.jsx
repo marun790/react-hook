@@ -9,14 +9,25 @@ export default class Counter extends Component {
     }
 
     incrementCount() {
-        console.log(this.state.count);
-        // this.state.count = this.state.count + 1; -> never do this it wo't re-render the dom
+        //console.log("Before =>",this.state.count);
+        // this.setState(
+        //     {
+        //         ...this.state,
+        //         count: this.state.count+1
+        //     }, () => {
+        //         console.log("Callback =>",this.state.count);
+        //     }
+        // );
+        // console.log("After =>",this.state.count);
+        
+        console.log("Before =>",this.state.count);
         this.setState(
-            {
-                ...this.state,
-                count: this.state.count+1
-            }
-        );
+            {count: this.state.count+1}
+        , () => {
+            console.log("Callback : ", this.state.count)
+        });
+
+        
     }
 
     shouldComponentUpdate(){
@@ -25,16 +36,24 @@ export default class Counter extends Component {
 
 
     componentDidUpdate(){
-        console.log('component updated')
+        // console.log('component updated')
+    }
+
+    increment5() {
+        this.incrementCount();
+        this.incrementCount();
+        this.incrementCount();
+        this.incrementCount();
+        this.incrementCount();
     }
 
     render() {
         return (
             <div>
                 {this.state.count}
-                <button onClick = {() => 
-                    this.setState({count : this.state.count+1})}>Click</button>
-                <button onClick = {() => this.incrementCount()} > Click</button>
+                {/* <button onClick = {() => 
+                    this.setState({count : this.state.count+1})}>Click</button> */}
+                <button onClick = {() => this.increment5()} > Click</button>
             </div>
         )
     }
