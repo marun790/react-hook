@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
+import Counter from './components/state/Counter';
 // import Message from './state/Message';
-import Counter from './state/Counter';
 // import Parent from './components/props/Parent';
 // import Home from './components/routing/Home';
 // import Login from './components/login/Login';
@@ -55,12 +55,12 @@ function App() {
       {/* <Login/> */}
       {/* <Layout/> */}
       {/* <Home> */}
-{/* <Login/> */}
+      {/* <Login/> */}
       {/* <BasicExample/> */}
       {/* <Parent/> */}
       {/* <Message/>*/}
 
-      <Counter/>
+      <Counter />
     </div>
   );
 }
