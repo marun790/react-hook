@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css'
-import Counter from './components/state/Counter';
+// import Counter from './components/state/Counter';
 // import Message from './state/Message';
-// import Parent from './components/props/Parent';
+import Parent from './components/props/Parent';
 // import Home from './components/routing/Home';
 // import Login from './components/login/Login';
 // import BasicExample from './components/routing/BasicExample';
@@ -57,10 +57,10 @@ function App() {
       {/* <Home> */}
       {/* <Login/> */}
       {/* <BasicExample/> */}
-      {/* <Parent/> */}
+      <Parent />
       {/* <Message/>*/}
 
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 }

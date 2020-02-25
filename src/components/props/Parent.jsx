@@ -5,11 +5,11 @@ import Greet from './Greet'
 export default function Parent() {
 
     const user = {
-        name : "arun",
-        age : "31"
+        name: "arun",
+        age: "31"
     }
 
-   
+
 
     return (
         <div>
@@ -21,7 +21,7 @@ export default function Parent() {
                 <p>How are you</p>
             </Greet>
             User Details
-            <Children user={user} degree = "BE">
+            <Children user={user} degree="BE">
                 <button>OK</button>
             </Children>
 

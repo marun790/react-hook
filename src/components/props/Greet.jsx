@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function Greet(props) {
+export default function Greet({ name, children }) {  //--> Destructuring
     return (
         <div>
-            Hello {props.name}
-            {props.children}
+            Hello {name}
+            {children}
             <span>---------------------------</span>
         </div>
-        
+
     )
 }
