@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css'
+import FormEvents from './components/forms/FormEvents';
 // import Counter from './components/state/Counter';
 // import Message from './state/Message';
 // import Parent from './components/props/Parent';
 // import FunctionClick from './components/event/FunctionClick';
 // import EventBind from './components/event/EventBind';
 // import Parent from './components/eventinprops/Parent';
-import Render from './components/conditionalrendering/Render';
+// import Render from './components/conditionalrendering/Render';
 // import Home from './components/routing/Home';
 // import Login from './components/login/Login';
 // import BasicExample from './components/routing/BasicExample';
@@ -69,7 +70,8 @@ function App() {
       {/* <FunctionClick /> */}
       {/* <EventBind /> */}
       {/* <Parent /> */}
-      <Render />
+      {/* <Render /> */}
+      <FormEvents/>
     </div>
   );
 }
