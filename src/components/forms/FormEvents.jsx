@@ -32,6 +32,7 @@ export default class FormEvents extends Component {
 
     handleSubmit = event => {
         alert(`${this.state.userName} ${this.state.comment} ${this.state.topic}`)
+        event.preventDefault();  //--> will prevent from form default deload activity
     }
 
     render() {
