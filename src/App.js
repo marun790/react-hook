@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'
-import RenderList from './components/Rendering/RenderList';
+// import RenderList from './components/Rendering/RenderList';
+import FormEvents from './components/forms/FormEvents';
 // import Counter from './components/state/Counter';
 // import Message from './state/Message';
 // import Parent from './components/props/Parent';
@@ -71,8 +72,9 @@ function App() {
       {/* <EventBind /> */}
       {/* <Parent /> */}
       {/* <Render /> */}
-      <RenderList />
-    </div>
+      {/* <RenderList /> */}
+      <FormEvents />
+    </div >
   );
 }
 
