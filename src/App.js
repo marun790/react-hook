@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css'
 // import Fragment from './components/fragment/Fragment';
 // import Parent from './components/errorBoundary/Parent';
-import HigherOrderCounter from './components/hiegherorder/HigherOrderCounter';
+// import HigherOrderCounter from './components/hiegherorder/HigherOrderCounter';
+import ComponentA from './components/context/ComponentA';
 // import RenderList from './components/Rendering/RenderList';
 // import FormEvents from './components/forms/FormEvents';
 // import Counter from './components/state/Counter';
@@ -79,7 +80,8 @@ function App() {
       {/* <FormEvents /> */}
       {/* <Fragment /> */}
       {/* <Parent /> */}
-      <HigherOrderCounter />
+      {/* <HigherOrderCounter name='arun' /> */}
+      <ComponentA />
     </div >
   );
 }

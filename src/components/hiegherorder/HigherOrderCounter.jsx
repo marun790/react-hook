@@ -12,4 +12,5 @@ class HigherOrderCounter extends Component {
     }
 }
 
-export default UpdatedComponent(HigherOrderCounter);
+export default UpdatedComponent(HigherOrderCounter, 5);
+
