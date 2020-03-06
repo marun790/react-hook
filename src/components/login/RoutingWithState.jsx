@@ -1,8 +1,8 @@
 import React, { useReducer, useContext } from 'react'
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router, Redirect } from 'react-router-dom';
 
 const USER_CONTEXT = React.createContext();
-const initialState = { name: 'Arun' }
+const initialState = { name: 'Arun', isLoggedIn: false }
 
 const reducer = (state, action) => {
   switch (action) {
@@ -10,7 +10,8 @@ const reducer = (state, action) => {
       console.log('Login');
       return {
         ...state,
-        name:'Aadhira'
+        name: 'Aadhira',
+        isLoggedIn: true
       }
     default:
       return state;
@@ -25,15 +26,15 @@ export default function RoutingWithState() {
 
 
   return (
-    <USER_CONTEXT.Provider value={{state: state, dispatch:dispatch}}>
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path='/' ><Login /></Route>
-          <Route path='/dashboard' ><Dashboard /></Route>
-        </Switch>
-      </div>
-    </Router>
+    <USER_CONTEXT.Provider value={{ state: state, dispatch: dispatch }}>
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path='/' ><Login /></Route>
+            <Route path='/dashboard' ><Dashboard /></Route>
+          </Switch>
+        </div>
+      </Router>
     </USER_CONTEXT.Provider>
   );
 }
@@ -42,21 +43,31 @@ export default function RoutingWithState() {
 function Login() {
 
   const context = useContext(USER_CONTEXT)
+  const state = context.state;
 
   const login = () => {
-    console.log('Logging in', context.state.name)
+    console.log('Logging in', state.name, 'isLoggedIn', state.isLoggedIn);
+    context.dispatch("LOGIN");
   }
 
-  return (
-    <div>
-      <h1>Login: {context.state.name}</h1>
-      <button onClick={() => context.dispatch("LOGIN")}>Login</button>
-    </div>
-  );
+
+  if (state.isLoggedIn) {
+    return (<Redirect to={{ pathname: "/dashboard" }} />);
+  } else {
+    return (
+      <div>
+        <h1>Login: {state.name}</h1>
+        <button onClick={login}>Login</button>
+      </div>
+    );
+  }
+
 }
 
 function Dashboard() {
+  const context = useContext(USER_CONTEXT);
+  const state = context.state;
   return (
-    <h1>Dashboard : </h1>
+    <h1>Dashboard : {state.name}</h1>
   )
 }
