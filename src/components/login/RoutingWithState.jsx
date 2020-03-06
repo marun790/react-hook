@@ -1,0 +1,62 @@
+import React, { useReducer, useContext } from 'react'
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+
+const USER_CONTEXT = React.createContext();
+const initialState = { name: 'Arun' }
+
+const reducer = (state, action) => {
+  switch (action) {
+    case "LOGIN":
+      console.log('Login');
+      return {
+        ...state,
+        name:'Aadhira'
+      }
+    default:
+      return state;
+  }
+
+}
+
+export default function RoutingWithState() {
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+
+
+  return (
+    <USER_CONTEXT.Provider value={{state: state, dispatch:dispatch}}>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path='/' ><Login /></Route>
+          <Route path='/dashboard' ><Dashboard /></Route>
+        </Switch>
+      </div>
+    </Router>
+    </USER_CONTEXT.Provider>
+  );
+}
+
+
+function Login() {
+
+  const context = useContext(USER_CONTEXT)
+
+  const login = () => {
+    console.log('Logging in', context.state.name)
+  }
+
+  return (
+    <div>
+      <h1>Login: {context.state.name}</h1>
+      <button onClick={() => context.dispatch("LOGIN")}>Login</button>
+    </div>
+  );
+}
+
+function Dashboard() {
+  return (
+    <h1>Dashboard : </h1>
+  )
+}
