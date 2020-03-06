@@ -19,7 +19,7 @@ const reducer = (state, action) => {
 
 }
 
-export default function RoutingWithState() {
+export default function ReduxInHoock() {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
