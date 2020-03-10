@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 // import Red_ComboA from './components/redux/Red_ComboA';
-import ReduxInHoock from './components/login/ReduxInHoock';
+import ReduxInHoock from './components/redux_in_hooks/ReduxInHoock';
 // import Fragment from './components/fragment/Fragment';
 // import Parent from './components/errorBoundary/Parent';
 // import HigherOrderCounter from './components/hiegherorder/HigherOrderCounter';
